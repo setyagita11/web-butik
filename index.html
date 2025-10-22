@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web butik</title>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER / NAVBAR (sticky) -->
+
+    <header class="site-header" id="navbar" role="banner">
+        <div class="container header-inner">
+            <div class="brand">
+                <div class="logo" aria-hidden="true">M</div>
+                <div>
+                    <h1 class="site-title">Magita's Corner</h1>
+                </div>
+            </div>
+
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#catalog">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#anggota">Anggota</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="nav-cta">
+                <button class="btn small" id="openLogin">Login</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO (full-width carousel) -->
+
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+
+                <div class="hero-slider" id="heroSlider" aria-label="Hero slider">
+                    <div class="hero-slide" data-index="0">
+                        <div class="hero-content">
+                            <p class="eyebrow">Butik Eksklusif • Batik & Linen</p>
+                            <h2>Elegan. Tradisi. Teranyar.</h2>
+                            <p class="lead">Koleksi curated batik untuk pria & wanita — limited edition, bahan premium.
+                            </p>
+                            <div class="hero-actions">
+                                <a class="btn primary" href="#contact">Hubungi Kami</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-slide" data-index="1">
+                        <div class="hero-content">
+                            <p class="eyebrow">Kualitas & Craftmanship</p>
+                            <h2>Motif klasik, potongan modern</h2>
+                            <p class="lead">Setiap helai dirancang untuk kenyamanan dan penampilan yang memorable.</p>
+                            <div class="hero-actions">
+                                <a class="btn primary" href="#catalog">Beli Sekarang</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT CATALOG CAROUSEL (katalog geser) -->
+
+        <section id="catalog" class="carousel-section" aria-labelledby="carousel-title">
+            <div class="container">
+                <div class="section-head">
+                    <h1 id="carousel-title">Best Seller</h3>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <button class="carousel-btn prev" aria-label="Sebelumnya"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+                    <div class="carousel" id="productCarousel" tabindex="0">
+                        <!-- carousel items (small cards) -->
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="https://i.pinimg.com/736x/bc/95/09/bc9509aa0570d231daec8b6cf02c1ecf.jpg"
+                                    alt="">
+                                <div class="meta">
+                                    <h4>Batik Parang Coklat</h4>
+                                    <div class="price">Rp 325.000</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="#">
+                            <img src="https://i.pinimg.com/1200x/b5/34/e5/b534e5bffe812d328415b79bee35e580.jpg" alt="">
+                            <div class="meta">
+                                <h4>Kawung Laras Ayu</h4>
+                                <div class="price">Rp 270.000</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="#">
+                        <img src="https://i.pinimg.com/1200x/b9/c9/e1/b9c9e1493c0321fea303316045092bf9.jpg" alt="">
+                        <div class="meta">
+                            <h4>Kawung Nirwa Biru</h4>
+                            <div class="price">Rp 280.000</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="https://i.pinimg.com/1200x/3e/34/cd/3e34cd078d505bbb2dcb0e9131ae8f94.jpg" alt="">
+                    <div class="meta">
+                        <h4>Kawung Ayu Hitam</h4>
+                        <div class="price">Rp 270.000</div>
+                </a>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="https://i.pinimg.com/736x/8a/ab/aa/8aabaab6edb4c5a42709bcbd1b4bddc7.jpg" alt="">
+                    <div class="meta">
+                        <h4>Batik Merah Tama</h4>
+                        <div class="price">Rp 420.000</div>
+                </a>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="https://i.pinimg.com/1200x/9f/31/98/9f3198feecb58d7d093cdedab7ce3858.jpg" alt="">
+                    <div class="meta">
+                        <h4>Sogan Arga Tama</h4>
+                        <div class="price">Rp 380.000</div>
+                </a>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+                <a href="#">
+                    <img src="https://i.pinimg.com/1200x/a7/0d/d3/a70dd39fe18074822e3d8774cf9c68ff.jpg" alt="">
+                    <div class="meta">
+                        <h4>Linen Olive Prana</h4>
+                        <div class="price">Rp 310.000</div>
+                </a>
+            </div>
+            </div>
+
+
+            <!-- Tambah item sesuai kebutuhan -->
+            </div>
+            <button class="carousel-btn next" aria-label="Berikutnya"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+
+        <section id="about" class="about">
+            <div class="container" style="text-align: center; ">
+                <h1>Tentang Magita's Corner</h2>
+                    <h4>Batik Modern: Gaya Kekinian, Warisan Kebanggaan</h4>
+                    <img src="https://www.rinso.com/images/h0nadbhvm6m4/17RmARrAatDIJ0x2DxsGSc/68f28770f0815e43ef8408c6751dcefb/MDIuX1JpbnNvX09rdG9iZXJfSGVhZGVyLmpwZw/1000w-668h/pembatik-pemula.jpg"
+                        alt="" style="width: 100%; height: 300px; object-fit: cover;">
+                    <p class="muted"></p>
+                    <p>Magita's Corner menghadirkan koleksi Batik Modern yang telahbertransformasi menjadi fashion
+                        statement yang stylish, nyaman, dan serbaguna. Kami memadukan teknik batik warisan dengan desain
+                        kontemporer, warna segar, dan potongan yang sesuai dengan tren masa kini. </p>
+            </div>
+        </section>
+
+        <!-- BLOG (placeholder) -->
+
+        <section id="blog" class="container">
+            <h1 class="section-title">Blog & Tips</h2>
+                <p class="muted" style="text-align: center;">Artikel & cerita tentang batik.</p>
+                <div class="blog-grid">
+                    <div class="blog-card">
+
+                        <a href="https://www.kapanlagi.com/korea/pesona-batik-indonesia-makin-hits-dipakai-aktor-korea-dan-idol-k-pop-46b1d1.html?page=3"
+                            style="color: black;">
+                            <img src="foto/k-pop.jpeg" alt="">
+                            <h3>Pesona Batik Indonesia, Makin Hits Dipakai Aktor Korea dan Idol K-Pop</h3>
+                            <p> Aktor Korea dan idol K-Pop pun sering terlihat mengenakan batik saat datang ke
+                                Indonesia.</p>
+                        </a>
+                    </div>
+                    <div class="blog-card">
+
+                        <a href="https://telusurkultur.com/blogs/news/5-motif-batik-nusantara-yang-wajib-kamu-tahu"
+                            style="color: black;">
+                            <img src="https://cdn.rri.co.id/berita/Bukittinggi/o/1722864732963-pameran-kain-batik-warisan-nusantara/gdv1hjae3td8fbr.jpeg"
+                                alt="">
+                            <h3>5 Motif Batik Nusantara yang Wajib Kamu Tahu</h3>
+                            <p>Memahami makna dan filosofi di balik motif batik akan memberikan pemahaman yang lebih
+                                dalam...</p>
+                        </a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="https://gallerywest.com/2024/05/06/mengenal-karakteristik-batik-indonesia/"
+                            style="color: black;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSksGDbryX-PecFm95QCUdm8vyMLvx7kalYCw&s"
+                                alt="">
+                            <h3>Mengenal karakteristik batik indonesia</h3>
+                            <p>Batik merupakan warisan budaya Indonesia yang kaya akan sejarah dan keindahan. Karya seni
+                                tekstil ini telah menjadi simbol...</p>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+
+        <section id="testimonial" class="testimonial">
+            <div class="container">
+                <h1>Testimonial Pelanggan</h3>
+
+                    <div class="testi-slider">
+                        <button class="testi-prev" aria-label="Sebelumnya" id="prev-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+
+                        <div class="testi-viewport" tabindex="0" aria-live="polite">
+                            <div class="testi-track">
+                                <!-- 1 -->
+                                <article class="testi-card" id="testi-card">
+                                    <p>"Bahannya adem banget, nyaman dipakai seharian. Motifnya juga tahan lama setelah
+                                        dicuci."</p>
+                                    <h4>- Rina, Yogyakarta</h4>
+                                </article>
+
+                                <!-- 2 -->
+                                <article class="testi-card" id="testi-card">
+                                    <p>"Motifnya unik dan jahitannya rapi. Banyak yang nanya waktu pakai ke acara
+                                        keluarga."
+                                    </p>
+                                    <h4>- Fajar, Bekasi</h4>
+                                </article>
+
+                                <!-- 3 -->
+                                <article class="testi-card" id="testi-card">
+                                    <p>"Pelayanan cepat dan packing rapi. Kainnya lembut, pas buat sehari-hari atau
+                                        kondangan."</p>
+                                    <h4>- Siti, Semarang</h4>
+                                </article>
+
+                                <article class="testi-card" id="testi-card">
+                                    <p>"Pelayanan cepat dan packing rapi. Kainnya lembut, pas buat sehari-hari atau
+                                        kondangan."</p>
+                                    <h4>- Nabil_azkr, Semarang</h4>
+                                </article>
+                            </div>
+                        </div>
+
+                        <button class="testi-next" aria-label="Berikutnya" id="next-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                        <div class="slider-dots" id="sliderDots"></div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- ANGGOTA KELOMPOK -->
+
+        <section id="anggota" class="anggota">
+            <div class="container">
+                <h1>Anggota Kelompok 7</h3>
+                    <div class="people-grid">
+                        <div class="person">
+                            <img src="foto/wendy.jpg" alt="" style="width: 200px; height: 200px;">
+                            <h3>Wendy Alwanil Adzim</h3>
+                            <p>102240008</p>
+                            <a href="https://instagram./wendy.rizecom" class="instagram_person">
+                                <i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </div>
+                        <div class="person">
+                            <img src="foto/umahayu.jpg" alt="" style="width: 200px; height: 200px;">
+                            <h3>Uma Hayu Setyagita</h3>
+                            <p>102240025</p>
+                            <a href="https://instagram.com/umagita___" class="instagram_person">
+                                <i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </div>
+                        <div class="person">
+                            <img src="foto/nabilazkar.jpg" alt="" style="width: 200px; height: 200px;">
+                            <h3>M. Nabil Azkar</h3>
+                            <p>102240027</p>
+                            <a href="https://instagram./nabil.azkarcom" class="instagram_person">
+                                <i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </div>
+                        <div class="person">
+                            <img src="foto/ainull.jpg" alt="" style="width: 200px; height: 200px;">
+                            <h3>M. Ainul Yaqin</h3>
+                            <p>102240028</p>
+                            <a href="https://instagram.com/potatoxsihp" class="instagram_person">
+                                <i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </div>
+                        <div class="person">
+                            <img src="foto/nafanajwa.jpg" alt="" style="width: 200px; height: 200px;">
+                            <h3>Nafa Najwa Fanny</h3>
+                            <p>102240035</p>
+                            <a href="https://instagram.com/nafanany" class="instagram_person">
+                                <i class="fa-brands fa-instagram"></i>Instagram</a>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Contact + Map -->
+
+        <section id="contact" class="container">
+            <h1 class="section-title">Hubungi Kami</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Informasi Kontak</h3>
+                        <p><i class="fa-solid fa-map-location-dot"></i>Kedungwuni, Kab. Pekalongan, Jawa Tengah</p>
+                        <p><i class="fa-solid fa-phone"></i>0858 6624 1028</p>
+                        <p><i class="fa-solid fa-envelope"></i>magitascorner@gmail.com</p>
+
+                        <div class="social-icons" style="text-align: center; margin: 20px;">
+                            <a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                            <a href="#"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                        </div>
+                    </div>
+                    <div class="map-container" style="margin: 10px;">
+                        <!-- Lokasi diubah ke Kecamatan Kedungwuni, Kabupaten Pekalongan -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.248624146911!2d109.64231747497455!3d-6.913317667547387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb8ed15a2a8d3%3A0x3027a76e352c970!2sKedungwuni%2C%20Kabupaten%20Pekalongan%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1696786000001!5m2!1sid!2sid"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" style="background-color: rgba(206, 206, 206, 0.644);">
+        <div class="container">
+            <div>&copy; <strong> 2025 | Magita's Corner</strong> — Butik Batik & Linen</div>
+            <div><strong> Tugas UTS Pemrograman Web I</strong></div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+    <!-- LOGIN MODAL (client-side demo) -->
+    <div id="loginModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-dialog">
+            <h3>Login</h3>
+            <label for="username">Username</label>
+            <input id="username" type="text" autocomplete="off">
+            <label for="password">Password</label>
+            <input id="password" type="password" autocomplete="off">
+            <div class="modal-actions">
+                <button class="btn ghost" id="closeLogin">Batal</button>
+                <button class="btn primary" id="doLoginBtn">Masuk</button>
+            </div>
+            <p class="muted small">*Demo: login hanya client-side (tidak menyimpan data).</p>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="butik.js"></script>
+</body>
+
+</html>
