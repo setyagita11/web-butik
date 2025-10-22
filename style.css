@@ -85,6 +85,8 @@ a {
     display: flex;
     gap: 12px;
     align-items: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -673,4 +675,5 @@ footer {
     .hero {
         padding: 60px 12px;
     }
+
 }
